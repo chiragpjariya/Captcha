@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    margin-left: 41%;
+    color: white;
+    margin-top: 30px;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: gainsboro;
+    border: 3px solid blue;
+    border-radius: 40px;
+}
+
+.display {
+    text-align: center;
+    height: 50px;
+    width: 394px;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: oblique;
+    margin-top: 40px;
+    background-color: rgb(238, 60, 6);
+
+}
+
+.input,
+.btn {
+    margin-top: 60px;
+}
+
+input {
+    padding-left: 10px;
+    transition: text ease-in-out 1.2s;
+    height: 50px;
+    width: 394px;
+    font-size: 30px;
+}
+
+button {
+    height: 30px;
+    color: azure;
+    width: 110px;
+    background-color: #ff5900;
+    font-size: 20px;
+    cursor: pointer;
+
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+#reset {
+    background-color: #19ec39;
+}
+
+#check {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.message {
+    content: Captcha Matching;
+    margin-top: 40px;
+    background-color: #2bdc46;
+    height: 40PX;
+    font-size: 25px;
+    padding-top: 5px;
+    font-weight: 700;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.message-invalid {
+    content: Captcha Matching;
+    margin-top: 40px;
+    background-color: #ff0000;
+    height: 40PX;
+    color: aliceblue;
+    font-size: 25px;
+    padding-top: 5px;
+    font-weight: 700;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.message-empty {
+    content: Captcha Matching;
+    margin-top: 40px;
+    background-color: #fff200;
+    height: 40PX;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-top: 5px;
+    font-weight: 700;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+@media screen and (max-width:767px) {
+    header {
+        margin-left: 41%;
+        color: white;
+        margin-top: 30px;
+        font-size: xx-large;
+        text-transform: uppercase;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+        border: 3px solid blue;
+        border-radius: 0px;
+    }
+
+    .display {
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        font-weight: 400;
+        font-size: xx-large;
+        font-style: oblique;
+        margin-top: 40px;
+        background-color: rgb(238, 60, 6);
+
+    }
+
+    .input,
+    .btn {
+        margin-top: 60px;
+    }
+
+    input {
+        padding-left: 10px;
+        transition: text ease-in-out 1.2s;
+        height: 50px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    button {
+        height: 50px;
+        color: azure;
+        width: 100%;
+        background-color: #ff5900;
+        font-size: 20px;
+        cursor: pointer;
+
+        font-weight: 600;
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #reset {
+        background-color: #19ec39;
+    }
+
+    #check {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .message {
+        content: Captcha Matching;
+        margin-top: 40px;
+        background-color: #2bdc46;
+        height: 50PX;
+        font-size: 25px;
+        padding-top: 5px;
+        font-weight: 700;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    .message-invalid {
+        content: Captcha Matching;
+        margin-top: 50px;
+        background-color: #ff0000;
+        height: 50PX;
+        color: aliceblue;
+        font-size: 25px;
+        padding-top: 5px;
+        font-weight: 700;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    .message-empty {
+        content: Captcha Matching;
+        margin-top: 50px;
+        background-color: #fff200;
+        height: 50PX;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        padding-top: 5px;
+        font-weight: 700;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+
+}
